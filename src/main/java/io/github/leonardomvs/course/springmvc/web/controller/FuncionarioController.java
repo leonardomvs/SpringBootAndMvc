@@ -3,8 +3,6 @@ package io.github.leonardomvs.course.springmvc.web.controller;
 import java.time.LocalDate;
 import java.util.List;
 
-import javax.validation.Valid;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
@@ -27,6 +25,7 @@ import io.github.leonardomvs.course.springmvc.domain.UF;
 import io.github.leonardomvs.course.springmvc.service.CargoService;
 import io.github.leonardomvs.course.springmvc.service.FuncionarioService;
 import io.github.leonardomvs.course.springmvc.web.validator.FuncionarioValidator;
+import jakarta.validation.Valid;
 
 @Controller
 @RequestMapping("/funcionarios")

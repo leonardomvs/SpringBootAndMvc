@@ -19,13 +19,13 @@
 	<link th:href="@{/css/style.css}" rel="stylesheet" />
 </head>
 <body>
-	<header th:replace="fragments/header :: cabecalho">
+	<header th:replace="~{fragments/header :: cabecalho}">
 		<div>header</div>
 	</header>
 	
 	<div  class="layout-main">
 		<aside>
-			<nav th:replace="fragments/sidebar :: nav-sidebar">
+			<nav th:replace="~{fragments/sidebar :: nav-sidebar}">
 				<span>menu</span>
 			</nav>
 		</aside>
@@ -35,7 +35,7 @@
 		</section>
 	</div>	
 		
-	<footer th:replace="fragments/footer :: rodape">
+	<footer th:replace="~{fragments/footer :: rodape}">
 		<div>footer</div>
 	</footer>
 	
